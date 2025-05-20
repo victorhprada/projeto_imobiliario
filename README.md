@@ -1,26 +1,35 @@
-# Projeto Mercado - Análise de Dados com Pandas e SQLAlchemy
+# Análise de Dados de Hospedagem
 
-Este projeto demonstra o uso de Pandas e SQLAlchemy para manipulação e análise de dados de clientes.
+Este projeto realiza uma análise detalhada de dados de hospedagem, incluindo informações sobre imóveis, disponibilidade e preços.
 
 ## Funcionalidades
 
-- Leitura de dados CSV de clientes
-- Armazenamento em banco de dados SQLite
-- Filtragem de dados por categoria
-- Operações de DELETE em registros específicos
-- Análise de dados de clientes
+* Análise de dados de imóveis e suas características
+* Processamento de informações de disponibilidade por período
+* Análise de preços e taxas
+* Processamento de comodidades e descrições
+* Agrupamento de dados por período (mensal)
+
+## Estrutura do Projeto
+
+* `preparando_json.py`: Script principal para processamento e análise dos dados
+* Dados de entrada:
+  - Dados de hospedagem (JSON)
+  - Dados de disponibilidade (JSON)
 
 ## Requisitos
 
-- Python 3.x
-- pandas
-- sqlalchemy
+* Python 3.x
+* pandas
+* requests
+* numpy
 
 ## Instalação
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_SEU_REPOSITORIO]
+git clone https://github.com/victorhprada/projeto_imobiliario.git
+cd projeto_imobiliario
 ```
 
 2. Instale as dependências:
@@ -32,10 +41,26 @@ pip install -r requirements.txt
 
 Execute o script principal:
 ```bash
-python fifty.py
+python preparando_json.py
 ```
 
-## Estrutura do Projeto
+## Análise de Dados
 
-- `fifty.py`: Script principal com as operações de análise de dados
-- `requirements.txt`: Lista de dependências do projeto 
+O projeto realiza as seguintes análises:
+* Processamento de dados de imóveis
+* Conversão e limpeza de dados
+* Análise de disponibilidade por período
+* Processamento de comodidades e descrições
+* Agrupamento de dados por mês
+
+## Contribuição
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes. 
